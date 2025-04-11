@@ -1,0 +1,114 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color-scheme: light dark; */
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  /* font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main{
+  width: 90vh;
+  height: 90vh;
+  background: white;
+  color: black;
+  border-radius: 2px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.inputs , .tasks, .footer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* =========== */
+.inputs{
+  background: rgba(0, 128, 0, 0);
+  height: 100px;
+}
+.inputs .taskField{
+  width: 80%;
+  height: 50px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16pt;
+  outline: none;
+  background: none;
+  border: 2px solid #242424;
+  padding-left: 10px;
+  border-radius: 3px;
+}
+.inputs .btnAddNewTask{
+  background: #242424;
+  color: white;
+  width: 60px;
+  height: 55px;
+  border: none;
+  margin-left: 5px;
+  font-size: 22pt;
+  cursor: pointer;
+  border-radius: 3px;
+}
+/* =============== */
+.tasks{
+  background: rgba(0, 0, 255, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-top: 10px;
+}
+/* ============== */
+.footer{
+  background: rgba(255, 0, 0, 0);
+  height: 100px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer .btnRemoveChecked{
+  background: #242424;
+  color: white;
+  border: none;
+  padding: 5px;
+  width: 150px;
+  height: 30px;
+  border-radius: 3px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.footer span{
+  border: 1px solid #24242475;
+  padding: 5px;  
+  margin-left: 10px;
+}
+/* ============== */
+.span-task{
+  background: rgba(255, 0, 0, 0);
+  border-top: 1px solid rgba(128, 128, 128, 0.355);
+  color: black;
+  width: 80%;
+  height: 50px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px 0px 10px;
+}
+p{
+  background: rgba(255, 0, 0, 0);
+  width: 80%;
+  text-align: left;
+}
