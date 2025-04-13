@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ToDoList</title>
   </head>
@@ -11,16 +11,21 @@
     <section class="main">
       <h1>TODOLIST</h1>
 
+      <!-- <div class="inputs">
+        <input type="text" class="taskField" placeholder="what needs to be done?">
+        <input type="button" class="btnAddNewTask" value="+">
+      </div> -->
+
+      <div class="tasks"></div>
+
       <div class="inputs">
         <input type="text" class="taskField" placeholder="what needs to be done?">
         <input type="button" class="btnAddNewTask" value="+">
       </div>
-
-      <div class="tasks"></div>
-
       <div class="footer">
-        <span>3 of 5 tasks done</span>
-        <input type="button" class="btnRemoveChecked" value="Remove checked X">
+        <span class="counter"></span>
+        <!-- <input type="button" class="btnRemoveChecked" value=""> -->
+        <button class="btnRemoveChecked">Remove all <span'>&#10004;</span></button>
       </div>
     </section>
 

@@ -5,7 +5,7 @@
 
   /* color-scheme: light dark; */
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* background-color: #242424; */
 
   /* font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,11 +16,20 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  /* background-image: linear-gradient(to bottom, #0f1120, #14192b, #191f36, #1e2742, #232e4e);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+  background: #252f48;
+}
+h1{
+  color: rgb(192, 192, 192);
 }
 .main{
   width: 90vh;
   height: 90vh;
-  background: white;
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid #191f2e00;
   color: black;
   border-radius: 2px;
   text-align: center;
@@ -37,8 +46,16 @@ body{
 }
 /* =========== */
 .inputs{
-  background: rgba(0, 128, 0, 0);
+  background: #252f48;
   height: 100px;
+  width: 80%;
+  margin: auto;
+  border-radius: 45px;
+  border-radius: 50px;
+  margin-top: 20px;
+background: linear-gradient(145deg, #212a41, #28324d);
+box-shadow:  20px 20px 60px #1f283d,
+             -20px -20px 60px #2b3653;
 }
 .inputs .taskField{
   width: 80%;
@@ -47,20 +64,28 @@ body{
   font-size: 16pt;
   outline: none;
   background: none;
-  border: 2px solid #242424;
+  border: 0px solid #242424;
   padding-left: 10px;
   border-radius: 3px;
 }
+.taskField{
+  color: rgb(193, 190, 190);
+}
 .inputs .btnAddNewTask{
-  background: #242424;
+  background: #24242400;
   color: white;
-  width: 60px;
-  height: 55px;
+  /* width: 60px;
+  height: 55px; */
   border: none;
   margin-left: 5px;
-  font-size: 22pt;
+  font-size: 28pt;
   cursor: pointer;
   border-radius: 3px;
+  background: rgba(255, 0, 0, 0);
+  transition: all ease-in-out .2s;
+}
+.inputs .btnAddNewTask:hover{
+  color: #39ad4b;
 }
 /* =============== */
 .tasks{
@@ -76,39 +101,69 @@ body{
   height: 100px;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 20px;
 }
 .footer .btnRemoveChecked{
-  background: #242424;
-  color: white;
+  background: #495d90;
+  color: rgb(208, 208, 208);
   border: none;
   padding: 5px;
   width: 150px;
   height: 30px;
-  border-radius: 3px;
+  border-radius: 15px;
   margin-right: 10px;
   font-weight: bold;
+  cursor: pointer;
+  transition: all ease-in-out .2s;
+}
+.footer .btnRemoveChecked:hover{
+  background: #904949;
 }
 .footer span{
-  border: 1px solid #24242475;
   padding: 5px;  
   margin-left: 10px;
+  color: #495d90;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 50px; 
 }
 /* ============== */
 .span-task{
-  background: rgba(255, 0, 0, 0);
-  border-top: 1px solid rgba(128, 128, 128, 0.355);
-  color: black;
+  background: #252d44;
+  color: rgb(180, 180, 180);
   width: 80%;
   height: 50px;
-  margin-top: 5px;
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 10px 0px 10px;
+  padding: 10px 10px 10px 10px;
+  /* border-radius: 15px; */
+
+  border-radius: 50px;
+background: linear-gradient(145deg, #28324d, #212a41);
+box-shadow:  20px 20px 60px #1f283d,
+             -20px -20px 60px #2b3653;
+            border: 1px solid rgba(245, 245, 245, 0.103);
 }
 p{
   background: rgba(255, 0, 0, 0);
   width: 80%;
   text-align: left;
+  font-size: 18pt;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.span-task button{
+  background: rgba(255, 0, 0, 0);
+  border: none;
+  border-radius: 100%;
+  padding: 0px;
+  font-size: 16pt;
+  cursor: pointer;
+  transition: all ease-in-out .2s;
+  transform: scale(1);
+  text-align: center;
+}
+.span-task button:hover{
+  transform: scale(1.2);
 }
